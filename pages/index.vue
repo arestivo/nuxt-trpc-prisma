@@ -9,7 +9,7 @@
     <h1>Posts</h1>
     <ul>
       <li v-for="post in posts" :key="post.id">
-        <NuxtLink :to="`post/${post.id}`">{{ post.title }}</NuxtLink>
+        <NuxtLink :to="{ name: 'post-id', params: { id: post.id } }">{{ post.title }}</NuxtLink>
       </li>
     </ul>
   </div>
