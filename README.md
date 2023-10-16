@@ -16,6 +16,12 @@ Generate the Prisma client:
 yarn prisma generate
 ```
 
+Create and edit a ```.env``` file pointing to the database, for example:
+
+```text
+DATABASE_URL="file:database.sqlite3"
+```
+
 Create and seed the database:
 
 ```bash
