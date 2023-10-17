@@ -3,7 +3,6 @@
   const post = ref<RouterInput['posts']['createPost']>({ title: '', text: '' })
 
   async function onSubmit() {
-    console.log(post.value)
     await $client.posts.createPost.query(post.value)
     navigateTo('/')
   }
