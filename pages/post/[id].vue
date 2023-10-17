@@ -6,7 +6,7 @@
 </script>
 
 <template>
-  <div>
+  <div class="post-view">
     <PostView :post="post" />
 
     <NuxtLink to="/">All Posts</NuxtLink>

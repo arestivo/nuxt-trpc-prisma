@@ -8,4 +8,9 @@ export const posts = router({
   getPost: publicProcedure.input(z.number()).query(async ({ ctx, input: id }) => {
     return await ctx.prisma.post.findUniqueOrThrow({ where: { id } })
   }),
+  createPost: publicProcedure
+    .input(z.object({ title: z.string(), text: z.string() }))
+    .query(async ({ ctx, input: { title, text } }) => {
+      return await ctx.prisma.post.create({ data: { title, text } })
+    }),
 })
