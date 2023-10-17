@@ -1,5 +1,6 @@
 <template>
   <main>
+    <NavigationBar brand="Blog" />
     <NuxtPage />
   </main>
 </template>

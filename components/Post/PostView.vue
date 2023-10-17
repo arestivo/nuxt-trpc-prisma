@@ -4,7 +4,7 @@
 
 <template>
   <div>
-    <h1>{{ post.title }}</h1>
+    <h2>{{ post.title }}</h2>
     <p>{{ post.text }}</p>
   </div>
 </template>

@@ -7,4 +7,5 @@ export default defineNuxtConfig({
   build: {
     transpile: ['trpc-nuxt'],
   },
+  css: ['@/assets/scss/main.scss'],
 })

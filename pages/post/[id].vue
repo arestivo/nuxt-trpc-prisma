@@ -1,8 +1,8 @@
 <script setup lang="ts">
   const { $client } = useNuxtApp()
-  const route = useRoute()
+  const { id } = useId()
 
-  const post = await $client.posts.getPost.query(parseInt(route.params.id.toString(), 10))
+  const post = await $client.posts.getPost.query(id)
 </script>
 
 <template>
